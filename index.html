@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+        section#about {
+            background-color: #E7EFC5;
+            color: #413C58;
+        }
+        section#about img {
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+        .carousel img{
+            height: 700px;
+            object-fit: cover;
+        }
+        .carousel .carousel-caption {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.308);
+            border-radius: 10px;
+            color: #413C58;
+            z-index: 2;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-warning-subtle text-emphasis-warning"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./CBP logo.png"
+              alt="logo"
+              class="img-fluid"
+              height="70"
+              width="40"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Birthday cakes</a></li>
+                  <li><a class="dropdown-item" href="#">Wedding cakes</a></li>
+                  <li><a class="dropdown-item" href="#">Corporate cakes</a></li>
+                  <li><a class="dropdown-item" href="#">Special cakes</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Contact Me</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="about" class="p-4">
+          <h2 class="text-center">About</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col"> <p>
+                Did you know that Cakes by Pam is a relatively new cake shop owned by Pamela Fajarito? It was
+                  established just last 2020. Despite being new in the industry,
+                  Cakes by Pam has already gained a reputation for creating some of
+                  the most delicious and visually appealing cakes in town. Pam has
+                  always been passionate about baking and turning ordinary
+                  ingredients into extraordinary creations. Her passion for baking
+                  led her to open her own cake shop, where she can share her love
+                  for baking with others.
+              </p>
+              <p class="mb-4 mb-mb-0">Cakes by Pam offers a wide range of cakes
+                for every occasion, from birthdays to weddings and everything in
+                between. Each cake is carefully crafted with attention to detail
+                and creativity, ensuring that every customer gets a cake that not
+                only tastes great but looks amazing too. If you're looking for a
+                cake that will wow your taste buds and your eyes, Cakes by Pam is
+                definitely worth a visit. With its delicious cakes and
+                personalized service, it's no wonder why this shop has become a
+                go-to destination for cake lovers in the area.</p>
+              </div>
+              <div class="col w-500"><img src="./pam.jpg" alt="pamela" height="500px"></div>
+        </div>
+      </section>
+      <section id="gallery">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Cakes by pam.JPG" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Cakes by Pam</h5>
+                  <p>Delicious, high-quality, and beautifully decorated cakes made with care.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Birthday Cake.JPG" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Birthday Cake</h5>
+                  <p>Moist, decadent, and beautifully decorated birthday cake for celebrations.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Wedding Cake.JPG" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Wedding Cake</h5>
+                  <p>Elegant, tiered, and beautifully designed cake for wedding celebrations.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Corporate Cake.JPG" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Corporate Cake</h5>
+                  <p>Professional, branded, and delicious cake for corporate events..</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Special Occassion.JPG" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Special Occasion Cake</h5>
+                  <p>Customized, memorable, and delicious cake for special occasions.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
