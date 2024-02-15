@@ -16,10 +16,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <style>
 
+    .showcase-area {
+  height: 50vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)
+    ),
+    url("./birthday-cake-01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+  margin-left: 10px;
+}
+  .main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
       h2 {
         font-family: "Oswald", sans-serif;
         font-optical-sizing: auto;
-        font-weight: <weight>;
+        font-weight: normal;
         font-style: normal;
         color: #413C58;
         font-size: 3rem;
@@ -39,7 +64,6 @@
       .dropdown-item:hover {
         background-color: #117ED2;
         color: #101111;
-        
       }
         section#about {
             background-color: #E7EFC5;
@@ -200,16 +224,12 @@
 
         section#footer .wrapper .buttons:nth-child(4):span {
           color: #323131;}
-
-
-
-
     </style>
   </head>
   <body>
     <header>
       <nav
-        class="navbar stick-top navbar-expand-lg navbar-light bg-warning-subtle text-emphasis-warning">
+        class="navbar fixed-top navbar-expand-lg navbar-light bg-warning-subtle text-emphasis-warning">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><img
@@ -251,10 +271,10 @@
                   Services
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Birthday cakes</a></li>
-                  <li><a class="dropdown-item" href="#">Wedding cakes</a></li>
-                  <li><a class="dropdown-item" href="#">Corporate cakes</a></li>
-                  <li><a class="dropdown-item" href="#">Special cakes</a></li>
+                  <li><a class="dropdown-item" href="./birthdaycake.html">Birthday cakes</a></li>
+                  <li><a class="dropdown-item" href="./weddingcake.html">Wedding cakes</a></li>
+                  <li><a class="dropdown-item" href="./corporatecake.html">Corporate cakes</a></li>
+                  <li><a class="dropdown-item" href="./specialoccasioncake.html">Special cakes</a></li>
                   <li><a class="dropdown-item" href="#"></a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
@@ -280,6 +300,12 @@
           </div>
         </div>
       </nav>
+      <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">Cakes to Remember</h1>
+            <p>Make Every Occasion Memorable with Our Specialty Cakes</p>
+        </div>
+    </section>
     </header>
     <main>
       <section id="about" class="p-4">
