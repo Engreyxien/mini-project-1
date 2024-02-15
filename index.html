@@ -14,7 +14,7 @@
     <style>
 
       h2 {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Pacifico', cursive;
         color: #413C58;
         font-size: 3rem;
         text-align: center;
@@ -56,6 +56,7 @@
             color: #413C58;
             z-index: 2;
         }
+
         section#footer {
           margin: 0;
           padding: 0;
@@ -72,6 +73,23 @@
           z-index: 1;
           overflow: hidden;
         }
+        
+        section#footer p {
+          padding: 20px;
+          text-align: center;
+        }
+        section#footer .icon-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        section#footer .icon-container i {
+          color: #413C58;
+          font-size: 20px;
+          line-height: 40px;
+          transition: all 0.3s ease-out;
+          border-radius: 10px;
+        }
         section#footer .wrapper {
             display: flex;
             justify-content: center;
@@ -80,7 +98,7 @@
             padding: 20px 0;
         }
 
-        section#footer .wrapper .row{
+        section#footer .wrapper{
             padding: 10px;
             text-align: center;
             justify-content: center;
@@ -91,7 +109,7 @@
         }
 
 
-        section#footer .wrapper .row .icons {
+        section#footer .wrapper .icons {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
@@ -114,7 +132,7 @@
           padding: 10px;
           transition: all 0.3s ease-out;
         }
-        section#footer .wrapper .row .icons i {
+        section#footer .wrapper .icons i {
           font-size: 20px;
           line-height: 60px;
           color: #413C58;
@@ -133,11 +151,6 @@
           line-height: 40px;
           margin-left: 10px;
           transition: all 0.3s ease-out;
-        }
-
-        section#footer p {
-          padding: 20px;
-          text-align: center;
         }
         section#footer .wrapper .buttons:hover {
           width: 200px;
@@ -159,8 +172,6 @@
           border-radius: 20px;
         }
         
-       
-
         section#footer .wrapper .buttons .icons:hover {
           width: 200px;
           border-radius: 0px;
@@ -171,11 +182,6 @@
         section#footer .wrapper .buttons .icons:hover i {
           color: #fff;
         }
-        section#footer .wrapper .buttons .icons:hover {
-          width: 200px;
-          border-radius: 0px;
-        }
-    
        
         section#footer .wrapper .buttons:nth-child(1):span {
           color: #3b5999;}
@@ -361,10 +367,10 @@
     ></script>
   </body>
   <footer>
-    <section id="footer"><p>Follow us on social media, or <span>message me</span></p>
+    <section id="footer"><p>Follow us on social media</p>
       <div class="wrapper">
-        <div class="row">
-          <div class="buttons">
+        <div class="icon-container">
+          <div class="buttons w-100">
             <div class="icons">
               <a href="https://www.facebook.com/cbpam?mibextid=LQQJ4d"><i class="fa-brands fa-facebook-f" > </i></a>
               <span>Facebook</span>
