@@ -15,7 +15,73 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <style>
+        
+    .showcase-area {
+  height: 50vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)
+    ),
+    url("./birthday-cake-01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+  margin-left: 10px;
+}
+.showcase-container .btn btn-primary {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  color: #101111;
+  background-color: #117ED2;
+  border-color: #117ED2;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.showcase-container .btn btn-primary:hover {
+  background-color: #E7EFC5;
+  color: #101111;
+  border-color: #E7EFC5;
+}
+.showcase-container h1 {
+  font-size: 4rem;
+  color: #1b1825;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.1;
+  text-align: left;
+  justify-self: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  margin-right: 10px;
+  padding: 2px;
+  margin: 0;
 
+}
+.showcase-container p {
+  font-size: 2rem;
+  margin-top: 2px;
+  color: #101111;
+}
+  .main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
       h2 {
         font-family: "Oswald", sans-serif;
         font-optical-sizing: auto;
@@ -255,6 +321,13 @@
           </div>
         </div>
       </nav>
+      <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">Cakes to Remember</h1>
+            <p> Make Every Occasion Memorable with Our Specialty Cakes </p>
+            <a href="#food-menu" class="btn btn-primary">Menu</a>
+        </div>
+    </section>
     </header>
     <main>
  
