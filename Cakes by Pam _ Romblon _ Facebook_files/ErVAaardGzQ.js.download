@@ -1,0 +1,6 @@
+;/*FB_PKG_DELIM*/
+
+__d("GroupReelsPlinkClickedFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f,g){"use strict";a=c("getFalcoLogPolicy_DO_NOT_USE")("2745");b=d("FalcoLoggerInternal").create("group_reels_plink_clicked",a);e=b;g["default"]=e}),98);
+__d("GroupClickActionFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f,g){"use strict";a=c("getFalcoLogPolicy_DO_NOT_USE")("780");b=d("FalcoLoggerInternal").create("group_click_action",a);e=b;g["default"]=e}),98);
+__d("applyChangesToBPlusTree",["I64"],(function(a,b,c,d,e,f,g){"use strict";var h;function a(a,b){var c=!1;for(var e=0;e<b.length;e++){var f=b[e],g=f[0];f=f[1];switch(f.operation){case"delete":a["delete"](g);break;case"put":var i=a.getWithDefault(g,void 0);if(i===f.value)continue;i=(h||(h=d("I64"))).cast(i);if(i!=null){var j=(h||(h=d("I64"))).cast(f.value);if(j!=null&&(h||(h=d("I64"))).equal(i,j))continue}case"add":a.set(g,f.value);break}c=!0}b.length=0;return c}g["default"]=a}),98);
+__d("createBPlusTreeFromSorted",["BPlusTree","ReStoreKeyComparer"],(function(a,b,c,d,e,f,g){"use strict";var h;function a(a,b){return c("BPlusTree").fromSorted(a,b==="asc"?(h||(h=d("ReStoreKeyComparer"))).compareKey:(h||(h=d("ReStoreKeyComparer"))).compareKeyDesc,64)}g["default"]=a}),98);
