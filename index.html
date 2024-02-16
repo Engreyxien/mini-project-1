@@ -15,7 +15,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <style>
-
     .showcase-area {
   height: 50vh;
   background: linear-gradient(
@@ -28,6 +27,7 @@
   background-repeat: no-repeat;
 }
   .showcase-container {
+  font-family: "oswald", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +38,7 @@
   backdrop-filter: blur(5px);
 }
 .showcase-container h1 {
+  font-family: "Oswald", sans-serif;
   font-size: 3rem;
   color: #1b1825;
   text-transform: uppercase;
@@ -54,9 +55,9 @@
   padding: 2px;
   margin: 0;
 }
-
   .main-title {
   text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
   margin-top: 1.5rem;
   font-size: 2rem;
 }
@@ -70,7 +71,6 @@
         text-align: center;
         padding: 20px;
         margin: 0;
-
       }
       .dropdown-menu {
         background-color: #A3C4BC;
@@ -85,6 +85,7 @@
         color: #101111;
       }
         section#about {
+          font-family: "Oswald", sans-serif;;
             background-color: #E7EFC5;
             color: #413C58;
         }
@@ -93,14 +94,15 @@
             object-fit: cover;
         }
         .carousel .carousel-caption {
+          font-family: "Oswald", sans-serif;;
             backdrop-filter: blur(10px);
             background-color: rgba(255, 255, 255, 0.308);
             border-radius: 10px;
             color: #413C58;
             z-index: 2;
         }
-
         section#footer {
+          font-family: "Oswald", sans-serif;
           margin: 0;
           padding: 0;
           box-sizing: border-box;
@@ -141,7 +143,6 @@
             flex-wrap: wrap;
             padding: 20px 0;
         }
-
         section#footer .wrapper{
             padding: 10px;
             text-align: center;
@@ -151,8 +152,6 @@
             margin: 0;
             margin-bottom: 10px
         }
-
-
         section#footer .wrapper .icons {
           margin: 0;
           padding: 0;
@@ -169,7 +168,6 @@
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
           transition: all 0.3s ease-out;
         }
-
         section#footer .wrapper .buttons .icons {
           display: inline-block;
           text-align: center;
@@ -188,7 +186,6 @@
           transition: all 0.3s ease-out;
           border-radius: 10px;
         }
-
         section#footer .wrapper .buttons .icons span {
           font-size: 20px;
           font-weight: 500;
@@ -215,7 +212,6 @@
           background: #323131;
           border-radius: 20px;
         }
-        
         section#footer .wrapper .buttons .icons:hover {
           width: 200px;
           border-radius: 0px;
@@ -226,16 +222,12 @@
         section#footer .wrapper .buttons .icons:hover i {
           color: #fff;
         }
-       
         section#footer .wrapper .buttons:nth-child(1):span {
           color: #3b5999;}
-
         section#footer .wrapper .buttons:nth-child(2):span {
           color: #8202b5;}
-
         section#footer .wrapper .buttons:nth-child(3):span {
           color: #b50064;}
-
         section#footer .wrapper .buttons:nth-child(4):span {
           color: #323131;}
     </style>
@@ -316,14 +308,14 @@
       </nav>
       <section class="showcase-area" id="showcase">
         <div class="showcase-container">
-            <h1 class="main-title" id="home">Cakes to Remember</h1>
+            <h1 class="main-title" id="home" >Cakes to Remember:</h1>
             <p> Make Every Occasion Memorable with Our Specialty Cakes </p>
         </div>
     </section>
     </header>
     <main>
       <section id="about" class="p-4">
-          <h2 class="text-center">Cakes by Pam</h2>
+          <h2 class="text-center"><u>Cakes by Pam</u></h2>
           <div class="container">
             <div class="row">
               <div class="col w-100"> <p>
@@ -346,7 +338,8 @@
                 personalized service, it's no wonder why this shop has become a
                 go-to destination for cake lovers in the area.</p>
               </div>
-              <div class="col-auto me-auto"><img src="./pam-removebg-preview.png" alt="pamela"  class="object-fit cover img-fluid"></div>
+              <div class="col-auto me-auto" >
+                <div class="d-block w-100 h-100 img-fluid"><img src="./pam-removebg-preview.png" alt="pamela"  class="object-fit cover img-fluid"></div></div>
             </div>
       </section>
       <section id="gallery">
