@@ -46,6 +46,7 @@ h2 {
   background-color: #a3c4bc;
   color: #413c58;
   border-radius: 10px;
+  margin-left: 1.5rem;
 }
 .dropdown-item {
   color: #413c58;
@@ -54,6 +55,37 @@ h2 {
   background-color: #117ed2;
   color: #101111;
 }
+.modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+      padding-top: 60px;
+    }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
 section#form {
 display: flex;
 flex-wrap: wrap;
@@ -405,11 +437,46 @@ footer .top .logo-details:hover{
                   <li><a class="dropdown-item" href="./weddingcake.html">Wedding cakes</a></li>
                   <li><a class="dropdown-item" href="./corporatecake.html">Corporate cakes</a></li>
                   <li><a class="dropdown-item" href="./specialoccasioncake.html">Special cakes</a></li>
-                  <li><a class="dropdown-item" href="./reminders.html">Reminders</a></li>
+                  <li><a href="#" onclick="autoOpenLink()" class="dropdown-item" >Reminders</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="#footer">Contact Me</a>
                   </li>
+                  <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <p><ul>
+                        <ol>
+                          <li>
+                            <p>
+                              No order is final until deposit has been made and the order form
+                              was filled out.
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              To confirm, atleast 50% downpayment 10 days before
+                              pickup/delivery.
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              We will be sending you a photo of your finished cake 1-2 hrs
+                              before pickup/delivery.
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              delivery is thru delivery services which may incur an additional
+                              fee
+                            </p>
+                          </li>
+                          <li>
+                            <p>Cake order will not be released until balance is settled</p>
+                          </li>
+                        </ol>
+                      </ul></p>
+                    </div>
                 </ul>
               </li>
               <li class="nav-item">
@@ -453,14 +520,14 @@ footer .top .logo-details:hover{
           <div class="form-group-theme">
             <label for="cake-theme">Cake Theme</label>
             <select name="cake-theme" id=""><option value="SO T1">SO T1</option>
-            <option value="BT T2">SO T2</option>
-            <option value="BT T2">SO T3</option>
-            <option value="BT T2">SO T4</option>
-            <option value="BT T2">SO T5</option>
-            <option value="BT T2">SO T6</option>
-            <option value="BT T2">SO T7</option>
-            <option value="BT T2">SO T8</option>
-            <option value="BT T2">SO T9</option>
+            <option value="SO T2">SO T2</option>
+            <option value="SO T2">SO T3</option>
+            <option value="SO T2">SO T4</option>
+            <option value="SO T2">SO T5</option>
+            <option value="SO T2">SO T6</option>
+            <option value="SO T2">SO T7</option>
+            <option value="SO T2">SO T8</option>
+            <option value="SO T2">SO T9</option>
             </select>
           </div>
           <div class="form-group-client-name">
@@ -514,6 +581,22 @@ footer .top .logo-details:hover{
         </form>
       </section>
     </main>
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == document.getElementById("myModal")) {
+          closeModal();
+        }
+      }
+      window.onload = function() {
+        openModal();
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -560,4 +643,3 @@ footer .top .logo-details:hover{
   </footer>
   </footer>
 </html>
-
